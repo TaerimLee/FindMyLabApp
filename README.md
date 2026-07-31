@@ -24,17 +24,3 @@ streamlit run v3_app/Overview.py
 - `tmp/` — earlier (v1/v2) app versions and the v1↔v2 validation script, kept for
   reference; not used by the running app.
 
-## Deployment (Streamlit Community Cloud)
-
-1. Push this repo to GitHub.
-2. On [share.streamlit.io](https://share.streamlit.io/), create a new app pointing at:
-   - Repository: this repo
-   - Branch: `main`
-   - Main file path: `v3_app/Overview.py`
-3. Streamlit Cloud installs `requirements.txt` automatically.
-
-Note: the Professor Prioritization page downloads the `all-mpnet-base-v2`
-sentence-transformer model (~420 MB) from Hugging Face on first use. On
-Streamlit Community Cloud's free tier (~1 GB RAM), this can be slow or hit
-memory limits — if that happens, consider Hugging Face Spaces instead, which
-offers more headroom.
