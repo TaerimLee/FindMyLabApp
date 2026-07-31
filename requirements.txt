@@ -1,0 +1,14 @@
+streamlit==1.60.0
+pandas==2.3.3
+numpy==2.2.6
+seaborn==0.13.2
+matplotlib==3.10.9
+networkx==3.4.2
+plotly==6.7.0
+scikit-learn==1.7.2
+sentence-transformers==5.6.0
+
+# CPU-only torch build (Streamlit Community Cloud has no GPU; the default
+# PyPI wheel bundles CUDA and is much larger / slower to install).
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.13.0
